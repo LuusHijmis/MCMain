@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {UtilityService} from "./utility.service";
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -9,7 +10,7 @@ export class ShuffleService {
   constructor(private  utilityService: UtilityService) { }
 
   shuffle(shuffleRounds: number) {
-    for (let i = 0; i < shuffleRounds; i++) {
+    for (let i = 0; i <   shuffleRounds; i++) {
       const row1 = this.utilityService.randomizer();
       const row2 = this.utilityService.randomizer();
       const column1 = this.utilityService.randomizer();
