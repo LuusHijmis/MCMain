@@ -4,8 +4,20 @@ body {
   /*background: #AAAAAA;*/
 }
 
-.table {
-  margin-top: 10px;
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.preview_image, img {
+  max-width: 150px;
+}
+
+.table_container {
+  grid-column: 2 ;
+  margin-top: 15px;
 }
 
 .button {
@@ -14,6 +26,8 @@ body {
 }
 
 button {
+  grid-column: 2;
+  float: left;
   background-color: #0E3A5D;
   color: white;
   border-color: #0E3A5D;
@@ -46,3 +60,15 @@ button {
 .tile15 {background-position: -180px -270px;}
 .tile16 {background: orange; cursor: default;}
 .tile17 {background-position: -270px -270px;}
+
+.preview_container {
+  grid-column: 3;
+  margin-top: 10px;
+}
+h1 {
+  font: 20px Arial, sans-serif;
+  color:#0E3A5D;
+  font-weight: bold;
+  font-size: 15px;
+
+}
