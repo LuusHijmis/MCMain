@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {PuzzleService} from "./service/puzzle.service";
-import {UtilityService} from "./service/utility.service";
-import {ShuffleService} from "./service/shuffle.service";
+import {PuzzleService} from "./services/puzzle.service";
+import {UtilityService} from "./services/utility.service";
+import {ShuffleService} from "./services/shuffle.service";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,6 @@ import {ShuffleService} from "./service/shuffle.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MCMain';
   shuffleRounds: number = 10;
   numberOfRows: number = 4;
   numberOfColumns: number =4;
