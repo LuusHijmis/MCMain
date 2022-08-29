@@ -1,5 +1,6 @@
 export enum StringEnum {
   tile16 ="tile16",
   cell44 = "cell44",
-  cell = "cell"
+  cell = "cell",
+  tile = "tile"
 }
